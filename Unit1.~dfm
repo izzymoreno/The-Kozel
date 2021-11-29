@@ -1,0 +1,77 @@
+object Form1: TForm1
+  Left = 145
+  Top = 89
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Form1'
+  ClientHeight = 441
+  ClientWidth = 640
+  Color = clGreen
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  Position = poScreenCenter
+  Visible = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ButtonBit: TButton
+    Left = 201
+    Top = 310
+    Width = 73
+    Height = 25
+    Caption = 'Перебить'
+    Enabled = False
+    TabOrder = 0
+    OnClick = ButtonBitClick
+  end
+  object ButtonSkid: TButton
+    Left = 361
+    Top = 310
+    Width = 73
+    Height = 25
+    Caption = 'Сбросить'
+    Enabled = False
+    TabOrder = 1
+    OnClick = ButtonSkidClick
+  end
+  object ButtonXod: TButton
+    Left = 281
+    Top = 310
+    Width = 73
+    Height = 25
+    Caption = 'Походить'
+    Enabled = False
+    TabOrder = 2
+    OnClick = ButtonXodClick
+  end
+  object MainMenu1: TMainMenu
+    object N1: TMenuItem
+      Caption = '&Игра'
+      object N3: TMenuItem
+        Caption = '&Новая игра'
+        OnClick = N3Click
+      end
+      object N6: TMenuItem
+        Caption = '&Выход'
+        OnClick = N6Click
+      end
+    end
+    object N2: TMenuItem
+      Caption = '&Справка'
+      object N4: TMenuItem
+        Caption = '&Правила игры'
+        OnClick = N4Click
+      end
+      object N5: TMenuItem
+        Caption = '&О программе'
+        OnClick = N5Click
+      end
+    end
+  end
+end
